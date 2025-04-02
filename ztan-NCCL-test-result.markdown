@@ -6,10 +6,11 @@
 >    -x ${HOST_VARS} \
 >    /opt/src/nccl-tests/build/all_reduce_perf -b 8 -e 8G -f 2 -g 1
 
-# nThread 1 nGpus 1 minBytes 8 maxBytes 8589934592 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
-#
-# Using devices
-#  Rank  0 Group  0 Pid   6899 on ztan-mig-235z device  0 [0000:04:00] NVIDIA H100 80GB HBM3
+```
+nThread 1 nGpus 1 minBytes 8 maxBytes 8589934592 step: 2(factor) warmup iters: 5 iters: 20 agg iters: 1 validation: 1 graph: 0
+
+Using devices
+  Rank  0 Group  0 Pid   6899 on ztan-mig-235z device  0 [0000:04:00] NVIDIA H100 80GB HBM3
 #  Rank  1 Group  0 Pid   6900 on ztan-mig-235z device  1 [0000:05:00] NVIDIA H100 80GB HBM3
 #  Rank  2 Group  0 Pid   6901 on ztan-mig-235z device  2 [0000:0b:00] NVIDIA H100 80GB HBM3
 #  Rank  3 Group  0 Pid   6902 on ztan-mig-235z device  3 [0000:0c:00] NVIDIA H100 80GB HBM3
@@ -62,7 +63,7 @@
   8589934592    2147483648     float     sum      -1    47535  180.71  338.82      0    47743  179.92  337.35      0
 # Out of bounds values : 0 OK
 # Avg bus bandwidth    : 70.742 
-
+```
 
 
 ## Interpretation
